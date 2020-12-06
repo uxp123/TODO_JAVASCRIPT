@@ -14,10 +14,10 @@
 
 body {
   margin: 0;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
-  background-color: var(--clr-primary);
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   color: var(--clr-light);
   display: grid;
   grid: "header header header header" auto "...... lists  active ......" auto/1fr minmax(100px, 300px) minmax(250px, 500px) 1fr;
