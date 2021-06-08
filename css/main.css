@@ -1,8 +1,10 @@
+
 :root {
   --clr-primary: rgb(55, 177, 226);
   --clr-light: #f4f4f4;
   --clr-dark: #333;
-  --clr-warning: rgb(4, 233, 54);
+  --clr-warning: #d11119;
+  --clr-completed: #0af53f;
 }
 
 *,
@@ -17,7 +19,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
-  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-image: linear-gradient(120deg, #2193b0 0%, #6dd5ed 100%);
   color: var(--clr-light);
   display: grid;
   grid: "header header header header" auto "...... lists  active ......" auto/1fr minmax(100px, 300px) minmax(250px, 500px) 1fr;
@@ -26,11 +28,11 @@ body {
 .title {
   grid-area: header;
   text-align: center;
-  font-size: calc(7vw + 2rem);
-  font-weight: 900;
-  color: rgba(0, 0, 0, 0.1);
-  letter-spacing: 2px;
-  margin: -0.3em 0 0.5em;
+  font-size: calc(7vw + 3rem);
+  font-weight: 600;
+  color: var(--clr-light);
+  letter-spacing: 1px;
+  margin: -0.1em 0 0.8em;
 }
 
 .all-tasks {
@@ -49,7 +51,7 @@ body {
 }
 
 .list-name:hover {
-  opacity: 0.7;
+  opacity: 0.1;
 }
 
 form {
@@ -57,7 +59,7 @@ form {
 }
 
 .btn {
-  cursor: pointer;
+  cursor: progress;
   background: 0;
   border: 0;
   padding: 0;
@@ -180,7 +182,7 @@ form {
 
 [type="checkbox"] {
   opacity: 0;
-  position: absolute;
+  position:felete absolute;
 }
 
 .task label {
